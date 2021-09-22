@@ -11,14 +11,14 @@ pipeline {
     stage('test') {
       steps {
         echo 'this is the test job'
-        sh 'mvn test'
+        sh 'mvn clean test'
       }
     }
 
     stage('package') {
       steps {
         echo 'this is the package job'
-        sh 'mvn package'
+        sh 'mvn package -DskipTests'
       }
     }
 
