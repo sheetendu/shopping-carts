@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('build') {
       steps {
-        echo 'this is the build job'
+        echo ' this is the new file...checking if blue Ocean  pipeline is picking the new file or not'
+	echo 'this is the build job'
         sh 'mvn compile'
       }
     }
